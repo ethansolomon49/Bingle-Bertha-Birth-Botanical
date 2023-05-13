@@ -5,7 +5,7 @@
 #include <vector>
 using namespace std;
 
-class Member{
+class Member{ //abstract class
     public:
         Member(string n, string d=""): name(n), description(d) {};
 
@@ -18,7 +18,7 @@ class Member{
         void setDescription(string d) { description = d;};
         string getDescription() {return description;};
         
-        virtual string getGreeting()=0;
+        virtual string getGreeting();
 
     protected:
         string name;
