@@ -5,10 +5,6 @@ using namespace std;
 
 //Precondition: r can only be "Great Grandparent", "Great Grandmother", or "Great Grandfather"
 void GreatGrandParent::setRole(string r) {
-    // r to lowercase
-    // remove anything other than alpha
-    // if not great grandparent, great grandmother, or great grandfather then cerr
-    // else set role to r
     if(r != "Great Grandparent" || r!= "Great Grandmother" || r!= "Great Grandfather"){
         cerr << "Please input a valid role: 'Great Grandparent', 'Great Grandmother', or 'Great Grandfather'";
         exit(0);
@@ -19,10 +15,6 @@ void GreatGrandParent::setRole(string r) {
 
 //Precondition: r can only be "Grandparent", "Grandmother", or "Grandfather"
 void GrandParent::setRole(string r) {
-    // r to lowercase
-    // remove anything other than alpha
-    // if not great grandparent, great grandmother, or great grandfather then cerr
-    // else set role to r
     if(r != "Grandparent" || r!= "Grandmother" || r!= "Grandfather"){
         cerr << "Please input a valid role: 'Grandparent', 'Grandmother', or 'Grandfather'";
         exit(0);
