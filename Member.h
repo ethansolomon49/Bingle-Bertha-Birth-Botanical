@@ -7,7 +7,7 @@ using namespace std;
 
 class Member{
     public:
-        Member(string n="", string d=""): name(n), description(d) {};
+        Member(string n, string d=""): name(n), description(d) {};
 
         void setName(string n){name=n;};
         string getName(){return name;};
