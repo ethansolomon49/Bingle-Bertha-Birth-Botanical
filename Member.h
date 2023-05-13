@@ -7,7 +7,7 @@ using namespace std;
 
 class Member{
     public:
-        Member(string n="", string d=""): name(n), descrption(d) {};
+        Member(string n="", string d=""): name(n), description(d) {};
 
         void setName(string n){name=n;};
         string getName(){return name;};
@@ -15,10 +15,10 @@ class Member{
         virtual string getRole()=0;
         virtual void setRole(string r)=0;
 
-        void setDescription(string d): description(d){};
+        void setDescription(string d) { description = d;};
         string getDescription() {return description;};
         
-        virtual void string getGreeting()=0;
+        virtual string getGreeting()=0;
 
     protected:
         string name;
