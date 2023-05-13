@@ -7,6 +7,16 @@ void Pet::setRole(string r) {
     role = r;
 }
 
+void Pet::getGreeting(int num){
+    cout << getName() << " the " << getRole() << " says hi: ";
+    for(int i=0; i<num; ++i){
+        cout << getSound() << " ";
+    }
+    cout << endl;
+
+    cout << "This is my description: " << getDescription();
+}
+
 //Precondition: r can only be "Child", "Daughter", or "Son"
 void Child::setRole(string r) {
     if(r != "Child" || r!= "Daughter" || r!= "Son"){
@@ -15,7 +25,6 @@ void Child::setRole(string r) {
     } else {
         role = r;
     }
-
 }
 
 //Precondition: r can only be "Grandchild", "Granddaughter", "Grandson"
@@ -26,5 +35,4 @@ void Grandchild::setRole(string r) {
     } else {
         role = r;
     }
-
 }
