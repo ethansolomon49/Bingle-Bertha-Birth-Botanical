@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void Member::getGreeting(){
+void Member::getGreeting(int num){
     cout << "Hi, my name is " << getName() << " and my role is " << getRole() << "!" << endl;
     cout << "A description of me is: " << getDescription() << endl;
 }

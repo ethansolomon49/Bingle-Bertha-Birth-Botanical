@@ -18,7 +18,7 @@ class Member{ //abstract class
         void setDescription(string d) { description = d;};
         string getDescription() {return description;};
         
-        virtual void getGreeting();
+        virtual void getGreeting(int num);
 
     protected:
         string name;

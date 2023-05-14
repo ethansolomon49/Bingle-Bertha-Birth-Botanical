@@ -39,7 +39,7 @@ class Child : public Member{
 
 class Grandchild : public Member{
     public:
-        Grandchild(string n, string r="Granchild", string d=""): Member(n, d) {setRole(r);};
+        Grandchild(string n, string r="Grandchild", string d=""): Member(n, d) {setRole(r);};
         virtual string getRole() {return role;};
         virtual void setRole(string r);
 };
