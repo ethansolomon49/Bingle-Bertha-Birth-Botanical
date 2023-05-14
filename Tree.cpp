@@ -40,8 +40,8 @@ Tree::Tree() {
     v.at(2).push_back(v4);
     v.at(2).push_back(v5);
     v.at(2).push_back(v6);
-    v.at(2).at(0).push_back(g);
-    v.at(2).at(1).push_back(p);
+    v.at(2).at(0).push_back(p);
+    v.at(2).at(1).push_back(g);
     v.at(2).at(2).push_back(au);
 
 
@@ -118,7 +118,7 @@ void Tree::printGreeting() {
         for(int i=0; i<6; ++i){
             for(int j=0; j<int(v.at(i).size()); ++j){
                 for(int k=0; k<int(v.at(i).at(j).size()); ++k){
-                    if(s == v.at(i).at(j).at(k)->getName()){v.at(i).at(j).at(k)->getGreeting(0);}
+                    if(s == v.at(i).at(j).at(k)->getName()){v.at(i).at(j).at(k)->getGreeting(1);}
                 }
             }
         }

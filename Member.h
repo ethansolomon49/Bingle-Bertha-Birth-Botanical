@@ -19,7 +19,6 @@ class Member{ //abstract class
         string getDescription() {return description;};
         
         virtual void getGreeting(int num);
-        //virtual void getGreeting(); //causes an error for some reason
 
         //trying to figure out how to remove this so that Other doesn't need a tier and column
         //or maybe we want to eventually tier Other?
