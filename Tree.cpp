@@ -88,7 +88,7 @@ void Tree::addToTree(Member* m) {
 void Tree::print() {
 
     for(int i = 0; i < int(v.size()); i++) {
-        cout << "Group " << i << " of ";
+        cout << "Generation " << i << ": ";
         cout << endl;
         for(int j = 0; j < int(v.at(i).size()); j++) {
             for(int k = 0; k < int(v.at(i).at(j).size()); k++) {
@@ -104,6 +104,28 @@ void Tree::print() {
     }
 }
 
-void Tree::printDescription(string name) {
+void Tree::printGreeting() {
     //find the person/pet/other and print their greeting
+    //O(n) runtime
+    string s;
+
+
+    cout << "Whose description would you like to read? Press x to exit: ";
+    getline(cin, s);
+    cout << endl;
+
+    while (s != "x") {
+        for(int i=0; i<6; ++i){
+            for(int j=0; j<int(v.at(i).size()); ++j){
+                for(int k=0; k<int(v.at(i).at(j).size()); ++k){
+                    if(s == v.at(i).at(j).at(k)->getName()){v.at(i).at(j).at(k)->getGreeting(0);}
+                }
+            }
+        }
+        cout << endl;
+        cout << "Whose description would you like to read? Press x to exit: ";
+        getline(cin, s);
+        cout << endl;
+    }
+    
 }

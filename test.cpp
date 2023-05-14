@@ -93,6 +93,8 @@ int main() {
     t.addToTree(dondon);
 
     t.print();
+    
+    t.printGreeting();
 
     return 0;
 }

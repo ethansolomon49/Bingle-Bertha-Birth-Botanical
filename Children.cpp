@@ -18,7 +18,7 @@ void Pet::getGreeting(int num){
     }
     cout << endl;
 
-    cout << "This is my description: " << getDescription();
+    cout << "This is my description: " << getDescription() << endl;
 }
 
 //Precondition: r can only be "Child", "Daughter", or "Son"
