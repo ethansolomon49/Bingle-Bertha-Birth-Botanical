@@ -12,6 +12,8 @@ class GreatGrandParent : public Member{
         GreatGrandParent(string n, string r="Great Grandparent", string d=""): Member(n, d) {setRole(r); tier=0;};
         virtual string getRole() {return role;};
         virtual void setRole(string r);
+        int getTier() {return tier;};
+        int getCol() {return 0;};
         
     protected:
         int tier;
@@ -22,6 +24,8 @@ class GrandParent : public Member{
         GrandParent(string n, string r="Grandparent", string d=""): Member(n, d) {setRole(r); tier=1;};
         virtual string getRole() {return role;};
         virtual void setRole(string r);
+        int getTier() {return tier;};
+        int getCol() {return 0;};
 
     protected:
         int tier;

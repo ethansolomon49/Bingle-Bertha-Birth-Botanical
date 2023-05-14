@@ -15,7 +15,7 @@ void Bingle::setRole(string r) {
 
 //Precondition: r can only be "Partner", "Wife", or "Husband"
 void Partner::setRole(string r) {
-    if(r != "Partner" || r!= "Wife" || r!= "Husband"){
+    if(r != "Partner" && r!= "Wife" && r!= "Husband"){
         cerr << "Please input a valid role: 'Partner', 'Wife', or 'Husband'";
         exit(0);
     } else {
@@ -26,7 +26,7 @@ void Partner::setRole(string r) {
 
 //Precondition: r can only be "Sibling", "Sister", or "Brother"
 void Sibling::setRole(string r) {
-    if(r != "Sibling" || r!= "Sister" || r!= "Brother"){
+    if(r != "Sibling" && r!= "Sister" && r!= "Brother"){
         cerr << "Please input a valid role: 'Sibling', 'Sister', or 'Brother'";
         exit(0);
     } else {

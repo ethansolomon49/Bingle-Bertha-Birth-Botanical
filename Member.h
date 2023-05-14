@@ -20,6 +20,9 @@ class Member{ //abstract class
         
         virtual void getGreeting(int num);
 
+        virtual int getTier()=0;
+        virtual int getCol()=0;
+
     protected:
         string name;
         string role; //virtual

@@ -5,11 +5,11 @@
 
 class Tree {
     public:
+        Tree();
         void addToTree(Member* m);
         void print();
     private:
-        vector<vector<vector<Member*>>> v; 
-        
+        vector<vector<vector<Member*> > > v; 
 };
 
 #endif 

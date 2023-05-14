@@ -25,7 +25,7 @@ void Godparent::setRole(string r){
 
 void Auncle::setRole(string r){
     //must be 'Auncle', 'Aunt', or 'Uncle'
-    if(r!="Auncle" || r!="Aunt" || r!="Uncle"){
+    if(r!="Auncle" && r!="Aunt" && r!="Uncle"){
         cerr << "Please input a valid role: 'Auncle', 'Aunt', or 'Uncle'";
         exit(0);
     } else {

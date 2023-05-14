@@ -19,6 +19,9 @@ class Pet : public Member{
 
         virtual void getGreeting(int num); //number of times sound is done
 
+        int getTier() {return tier;};
+        int getCol() {return 0;};
+
     protected:
         string sound;
         int tier;
@@ -36,6 +39,8 @@ class Child : public Member{
         Child(string n, string r="Child", string d=""): Member(n, d) {setRole(r); tier=4;};
         virtual string getRole() {return role;};
         virtual void setRole(string r);
+        int getTier() {return tier;};
+        int getCol() {return 1;};
 
     protected:
         int tier;
@@ -46,6 +51,8 @@ class Grandchild : public Member{
         Grandchild(string n, string r="Grandchild", string d=""): Member(n, d) {setRole(r); tier=5;};
         virtual string getRole() {return role;};
         virtual void setRole(string r);
+        int getTier() {return tier;};
+        int getCol() {return 0;};
     
     protected:
         int tier;
