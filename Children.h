@@ -9,7 +9,7 @@
 using namespace std;
 class Pet : public Member{
     public:
-        Pet(string n, string s, string r="pet", string d=""): Member(n, d) {setRole(r); setSound(s);};
+        Pet(string n, string s, string r="pet", string d=""): Member(n, d) {setRole(r); setSound(s); tier=4;};
 
         virtual string getRole() {return role;};
         virtual void setRole(string r);
@@ -21,6 +21,7 @@ class Pet : public Member{
 
     protected:
         string sound;
+        int tier;
         
 };
 
@@ -32,16 +33,22 @@ This is their description:
 
 class Child : public Member{
     public:
-        Child(string n, string r="Child", string d=""): Member(n, d) {setRole(r);};
+        Child(string n, string r="Child", string d=""): Member(n, d) {setRole(r); tier=4;};
         virtual string getRole() {return role;};
         virtual void setRole(string r);
+
+    protected:
+        int tier;
 };
 
 class Grandchild : public Member{
     public:
-        Grandchild(string n, string r="Grandchild", string d=""): Member(n, d) {setRole(r);};
+        Grandchild(string n, string r="Grandchild", string d=""): Member(n, d) {setRole(r); tier=5;};
         virtual string getRole() {return role;};
         virtual void setRole(string r);
+    
+    protected:
+        int tier;
 };
 
 #endif
