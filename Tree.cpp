@@ -102,5 +102,8 @@ void Tree::print() {
         }
         cout << endl;
     }
+}
 
+void Tree::printDescription(string name) {
+    //find the person/pet/other and print their greeting
 }
