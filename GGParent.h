@@ -7,9 +7,9 @@
 #include <iostream>
 
 using namespace std;
-class GreatGrandParent : public Member{
+class GreatGrandParent : public Relative{
     public:
-        GreatGrandParent(string n, string r="Great Grandparent", string d=""): Member(n, d) {setRole(r); tier=0;};
+        GreatGrandParent(string n, string r="Great Grandparent", string d=""): Relative(n, d) {setRole(r); tier=0;};
         virtual string getRole() {return role;};
         virtual void setRole(string r);
         int getTier() {return tier;};
@@ -19,9 +19,9 @@ class GreatGrandParent : public Member{
         int tier;
 };
 
-class GrandParent : public Member{
+class GrandParent : public Relative{
     public:
-        GrandParent(string n, string r="Grandparent", string d=""): Member(n, d) {setRole(r); tier=1;};
+        GrandParent(string n, string r="Grandparent", string d=""): Relative(n, d) {setRole(r); tier=1;};
         virtual string getRole() {return role;};
         virtual void setRole(string r);
         int getTier() {return tier;};

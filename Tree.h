@@ -8,6 +8,7 @@ class Tree {
         Tree();
         void addToTree(Member* m);
         void print();
+        void printDescription(string name);
     private:
         vector<vector<vector<Member*> > > v; 
 };

@@ -8,9 +8,9 @@
 
 using namespace std;
 
-class Parent : public Member{
+class Parent : public Relative{
     public:
-        Parent(string n, string r="Parent", string d=""): Member(n, d) {setRole(r); tier=2;};
+        Parent(string n, string r="Parent", string d=""): Relative(n, d) {setRole(r); tier=2;};
         virtual string getRole() {return role;};
         virtual void setRole(string r);  
         int getTier() {return tier;}; 
@@ -20,9 +20,9 @@ class Parent : public Member{
         int tier;
 };
 
-class Godparent : public Member{
+class Godparent : public Relative{
     public:
-        Godparent(string n, string r="Godparent", string d=""): Member(n, d) {setRole(r); tier=2;};
+        Godparent(string n, string r="Godparent", string d=""): Relative(n, d) {setRole(r); tier=2;};
         virtual string getRole() {return role;};
         virtual void setRole(string r);
         int getTier() {return tier;};
@@ -32,9 +32,9 @@ class Godparent : public Member{
         int tier;
 };
 
-class Auncle : public Member{
+class Auncle : public Relative{
     public:
-        Auncle(string n, string r="Auncle", string d=""): Member(n, d) {setRole(r); tier=2;};
+        Auncle(string n, string r="Auncle", string d=""): Relative(n, d) {setRole(r); tier=2;};
         virtual string getRole() {return role;};
         virtual void setRole(string r);
         int getTier() {return tier;};

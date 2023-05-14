@@ -19,8 +19,11 @@ class Member{ //abstract class
         string getDescription() {return description;};
         
         virtual void getGreeting(int num);
+        //virtual void getGreeting(); //causes an error for some reason
 
-        virtual int getTier()=0;
+        //trying to figure out how to remove this so that Other doesn't need a tier and column
+        //or maybe we want to eventually tier Other?
+        virtual int getTier()=0; 
         virtual int getCol()=0;
 
     protected:
@@ -29,6 +32,13 @@ class Member{ //abstract class
         string description; 
 
 
+};
+
+class Relative : public Member { //doesn't really do anything
+    public:
+        Relative(string n, string d): Member(n, d) {};
+        virtual int getTier()=0;
+        virtual int getCol()=0;
 };
 
 #endif

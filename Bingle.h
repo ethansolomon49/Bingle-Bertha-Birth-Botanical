@@ -7,9 +7,9 @@
 #include <iostream>
 
 using namespace std;
-class Bingle : public Member{
+class Bingle : public Relative{
     public:
-        Bingle(string n, string r="Bingle Bertha", string d=""): Member(n, d) {setRole(r); tier = 3;};
+        Bingle(string n, string r="Bingle Bertha", string d=""): Relative(n, d) {setRole(r); tier = 3;};
         virtual string getRole() {return role;};
         virtual void setRole(string r);
         int getTier() {return tier;};
@@ -20,9 +20,9 @@ class Bingle : public Member{
         
 };
 
-class Partner : public Member{
+class Partner : public Relative{
     public:
-        Partner(string n, string r="Partner", string d=""): Member(n, d) {setRole(r); tier=3;};
+        Partner(string n, string r="Partner", string d=""): Relative(n, d) {setRole(r); tier=3;};
         virtual string getRole() {return role;};
         virtual void setRole(string r);
         int getTier() {return tier;};
@@ -32,9 +32,9 @@ class Partner : public Member{
         int tier;
 };
 
-class Sibling : public Member{
+class Sibling : public Relative{
     public:
-        Sibling(string n, string r="Sibling", string d=""): Member(n, d) {setRole(r); tier=3;};
+        Sibling(string n, string r="Sibling", string d=""): Relative(n, d) {setRole(r); tier=3;};
         virtual string getRole() {return role;};
         virtual void setRole(string r);
         int getTier() {return tier;};
@@ -44,9 +44,9 @@ class Sibling : public Member{
         int tier;
 };
 
-class Cousin : public Member{
+class Cousin : public Relative{
     public:
-        Cousin(string n, string r="Cousin", string d=""): Member(n, d) {setRole(r);tier=3;};
+        Cousin(string n, string r="Cousin", string d=""): Relative(n, d) {setRole(r);tier=3;};
         virtual string getRole() {return role;};
         virtual void setRole(string r);
         int getTier() {return tier;};
